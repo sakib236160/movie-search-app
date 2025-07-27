@@ -34,7 +34,6 @@ export default function App() {
   };
 
   const handleClear = () => {
-    setQuery('');
     setMovies([]);
     setError('');
   };
@@ -80,7 +79,7 @@ export default function App() {
               className="bg-white rounded-lg shadow p-4 flex flex-col items-center"
             >
               <img
-                src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/150'}
+                src={movie.Poster !== 'N/A' ? movie.Poster : 'https://i.ibb.co/vCyMXnRN/download.jpg'}
                 alt={movie.Title}
                 className="w-full h-64 object-cover rounded mb-3"
               />
